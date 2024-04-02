@@ -1,0 +1,11 @@
+name: Test
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  call-workflow:
+    uses: kuckjwi0928/github-reusing-workflow/.github/workflows/workflow.yaml@main
+    with:
+      environment: dev
+      project: workflow-java-example
