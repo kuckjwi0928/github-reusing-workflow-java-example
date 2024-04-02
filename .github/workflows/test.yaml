@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   test:
-    uses: kuckjwi0928/github-reusing-workflow/.github/workflows/gradle-workflow.yaml@main
+    uses: kuckjwi0928/github-reusing-workflow/.github/workflows/gradle-test-workflow.yaml@main
     with:
       environment: dev
       project: workflow-java-example
